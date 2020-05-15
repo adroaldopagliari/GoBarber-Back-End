@@ -11,7 +11,7 @@ import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 const usersRouter = Router();
 const usersController = new UsersController();
 const userAvatarController = new UserAvatarController();
-const upload = multer(UploadConfig);
+const upload = multer(UploadConfig.multer);
 
 usersRouter.post(
   '/',
